@@ -5,3 +5,5 @@ from django.template import loader
 def index(response):
     response = "You're looking at index of miblog."
     return HttpResponse(response)
+
+# DO MORE VIEWS
