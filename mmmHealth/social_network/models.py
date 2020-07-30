@@ -25,8 +25,7 @@ class User(models.Model):
         default= CZECH,
     )
 
-    country = models.CharField(max_length=200)
-    phone_number = models.BigIntegerField()
+    phone_number = models.BigIntegerField(null = True)
     account_status = models.SmallIntegerField(default = 1)
 
     def __str__(self):
